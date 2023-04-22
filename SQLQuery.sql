@@ -4,7 +4,7 @@ Categories - таблица с категориями
 ProductCategories - связующая таблица для отношения "многие ко многим"
 */
 
-SELECT P."Name", C."Name"
+SELECT P.Name, C.Name
 FROM Products P
 LEFT JOIN ProductCategories PC
 	ON P.Id = PC.ProductId
