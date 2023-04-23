@@ -3,13 +3,13 @@ using MindBoxSolution.Primitives;
 namespace MindBoxSolution.Tests
 {
     /// <summary>
-    /// Тесты для круга
+    /// РўРµСЃС‚С‹ РґР»СЏ РєСЂСѓРіР°
     /// </summary>
     [TestFixture]
     public class CircleTests
     {
         /// <summary>
-        /// Исключение: Отрицательный или нулевой радиус круга
+        /// РСЃРєР»СЋС‡РµРЅРёРµ: РћС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Р№ РёР»Рё РЅСѓР»РµРІРѕР№ СЂР°РґРёСѓСЃ РєСЂСѓРіР°
         /// </summary>
         [Test]
         public void CircleNegativeRadiusTest_Exception()
@@ -21,7 +21,7 @@ namespace MindBoxSolution.Tests
         }
 
         /// <summary>
-        /// Успех: Нахождение площади круга
+        /// РЈСЃРїРµС…: РќР°С…РѕР¶РґРµРЅРёРµ РїР»РѕС‰Р°РґРё РєСЂСѓРіР°
         /// </summary>
         [Test]
         public void CirclePositiveRadiusTest_Success()
