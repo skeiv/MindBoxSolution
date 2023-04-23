@@ -24,6 +24,17 @@ namespace MindBoxSolution.Tests
         }
 
         /// <summary>
+        ///  Исключение: Сумма двух сторон треугольника не может быть меньше третьей стороны
+        /// </summary>
+        [Test]
+        public void TriangleWrongEdgesTest_Exception()
+        {
+            IFigure figure;
+
+            Assert.Throws<ArgumentException>(() => figure = new Triangle(1, 1, 3));
+        }
+
+        /// <summary>
         /// Успех: Нахождение площади треугольника
         /// </summary>
         [Test]
